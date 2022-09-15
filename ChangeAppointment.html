@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Calendar 01</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+
+		<div class="col">
+			<h1>Change your appointment</h1>
+			<h5>If you need to make changes to your reservation or cancel the appointment, you can do it here. Inform any additional details below.</h5>
+			<br>
+			  <div class="mb-3">
+				<label for="exampleFormControlTextarea1" class="form-label">Company name</label>
+				<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Example: Gigantti" rows="1"></textarea>
+		</div>
+
+
+	<section class="ftco-section" style="float: left">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-18 text-center mb-20">
+					<h3 class="heading-section">Choose the date here</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="calendar calendar-first" id="calendar_first">
+				    <div class="calendar_header">
+				        <button class="switch-month switch-left"> <i class="fa fa-chevron-left"></i></button>
+				         <h2></h2>
+				        <button class="switch-month switch-right"> <i class="fa fa-chevron-right"></i></button>
+				    </div>
+				    <div class="calendar_weekdays"></div>
+				    <div class="calendar_content" ></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<div style="clear:left"></div>
+
+<label for="appt">Choose a time for your delivery:</label>
+
+<input type="time" id="appt" name="appt"
+       min="09:00" max="18:00" required>
+
+<p></p><p>
+
+</br>
+	
+	<input id="con"
+	type="radio" name="con" value="con" />
+	
+	<label for="con">Containers</label>
+	<br
+	/>
+	<input id="ton"
+	type="radio" checked="checked" name="ton"
+	
+	 value="ton" />
+	<label for="ton">Tons</label>
+	<br
+	/>
+	</p>
+
+
+	<div class="mb-3">
+		<label for="exampleFormControlTextarea1" class="form-label">Weight / Containers</label>
+		<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Example: 12" rows="1"></textarea>
+</div>
+
+<form method="post" action="/Tests/Post/">      
+	<fieldset>          
+		<legend> </legend>  
+		<input type="checkbox" name="favorite_pet" value="Electronics"> Electronics<br>      
+		<input type="checkbox" name="favorite_pet" value="Refridgerators"> Refridgerators<br>      
+		<input type="checkbox" name="favorite_pet" value="Undefined"> Undefined<br>      
+		<br>           
+	</fieldset>      
+</form>
+
+<div class="mb-3">
+	<label for="exampleFormControlTextarea1" class="form-label">Comments / Additional information</label>
+	<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="" rows="5"></textarea>
+</div>
+
+
+
+<div style="clear:right"></div>
+<input type="button" value="Send">
+</div>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
+</html>
+
