@@ -341,3 +341,49 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+
+  
+}
+.all header,
+.all footer,
+.all-content {
+  padding: 20px;
+}
+.all header{
+align-content: center;
+text-align: center;
+}
+
+.all footer{
+align-content: center;
+text-align: center;
+}
+
+header{
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 1203px;
+  height: 185px;
+  left: 118px;
+  top: 24px;
+  
+  background: rgba(0, 123, 255, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+footer {
+  box-sizing: border-box;
+
+
+  position: absolute;
+  width: 1403px;
+  height: 180px;
+  left: 0px;
+  top: 852px;
+  bottom: 10px;
+  
+  background: rgba(0, 123, 255, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
