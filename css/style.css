@@ -33,86 +33,6 @@
   box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
-/* @media print {
-  *,
-  *::before,
-  *::after {
-    text-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-  }
-  a:not(.btn) {
-    text-decoration: underline;
-  }
-  abbr[title]::after {
-    content: ' (' attr(title) ')';
-  }
-  pre {
-    white-space: pre-wrap !important;
-  }
-  pre,
-  blockquote {
-    border: 1px solid #adb5bd;
-    page-break-inside: avoid;
-  }
-  thead {
-    display: table-header-group;
-  }
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-  @page {
-    size: a3;
-  }
-  body {
-    min-width: 992px !important;
-  }
-  .container {
-    min-width: 992px !important;
-  }
-  .navbar {
-    display: none;
-  }
-  .badge {
-    border: 1px solid #000;
-  }
-  .table {
-    border-collapse: collapse !important;
-  }
-  .table td,
-  .table th {
-    background-color: #fff !important;
-  }
-  .table-bordered th,
-  .table-bordered td {
-    border: 1px solid #dee2e6 !important;
-  }
-  .table-dark {
-    color: inherit;
-  }
-  .table-dark th,
-  .table-dark td,
-  .table-dark thead th,
-  .table-dark tbody + tbody {
-    border-color: #dee2e6;
-  }
-  .table .thead-dark th {
-    color: inherit;
-    border-color: #dee2e6;
-  }
-} */
-
 body {
   font-family: 'Lato', Arial, sans-serif;
   font-size: 16px;
@@ -182,7 +102,7 @@ h5,
 .calendar,
 .calendar_weekdays,
 .calendar_content {
-  max-width: 450px;
+  max-width: 550px;
 }
 
 .calendar {
@@ -191,7 +111,7 @@ h5,
 }
 
 .calendar_content {
-  background: #fff;
+  background: #f5fbfc;
 }
 
 .calendar_weekdays {
@@ -501,4 +421,21 @@ header {
 
 .reserv-form {
   margin-top: 40px;
+}
+
+.radio-btns {
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
+  margin-top: 20px;
+}
+
+.weight-form {
+  margin-top: 15px;
+}
+
+.form-pos {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
 }
