@@ -1,100 +1,187 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' type='text/css' media='screen' href='/css/clients.css'>
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <title>Cool-Finland Oy</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <link rel='stylesheet' type='text/css' media='screen' href='/css/clients.css'>
+  <title>Cool-Finland Oy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
-    <body class="all">
-        <header>
-        
-          <img src="/logo2.png" alt="logo" class="center">
-        </header>
-        
-    
-        <div class="all-body">
-    
-    
-            <section class="all-content">
-            
-            <div class="txt">
-                <h3>Menu</h3>
-                </div>
-                <a href="#" style="color: white" class="button button1">Admin</a>
-                <a href="#" style="color: white" class="button button2">Login</a>
-                <a href="#" style="color: white" class="button button3">Report</a>
-                </div>
 
-        <div class="background">
-            
-            <h1>Clients
-                </h1>
-            </div>
+<body>
+  <header>
+    <div class="container header">
+      <div class="logo">
+        <img src="/logo2.png" alt="logo" class="center">
+      </div>
+      <div class="menu">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" tabindex="2" href="/MakeReservation.html" aria-disabled="true">Reservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/clients.html">Clients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
-            <div style="overflow-x: auto;">
-      
-                <div class="tausta"> 
-                <h2>Gigantti</h2> 
-                <p>
-                    Y-tunnus 1523846-8 <br> <br>
-                    020 321 321 <br> <br>
-                    Töölönlahdenkatu 2, 00100 Helsinki <br>
-                       
-                </p>
+  <div class="container">
+    <table class="table table-client">
+      <thead>
+        <tr>
+          <th scope="col">Client</th>
+          <th scope="col">Y-tunnus</th>
+          <th scope="col">Phone</th>
+          <th scope="col">Address</th>
+          <th scope="col">Status</th>
+          <th scope="col">Edit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="active-row">
+          <th scope="row"><b>Gigantti Oy</b></th>
+          <td>1523846-8 </td>
 
-                </div>
-                <div class="tausta2"> 
-                    <h2>Appointments</h2>
-                        <br>
-                   <!--- <div class="taulukko">
+          <td>044 4223 342</td>
+          <td> Töölönlahdenkatu 2, 00100 Helsinki </td>
 
-                        <table>
-                            <tr>
-                              <th>Date</th>
-                              <th>Status</th>
-                            </tr>
-                            <tr>
-                              <td>23.9.22, 11.00</td>
-                            <td>
-                              <div class="active">Active</div>
-                            </td>
-                            </tr>
-            
-                            <tr>
-                              <td>23.9.22, 11.00</td>
-                              <td><div class="done">Done</div></td>
-                            </tr> -->
+          <td>
+            <div class="active">Active</div>
+          </td>
+          <td><b><a href="default.asp" target="_blank">Edit</a></b></td>
+        </tr>
+
+        <tr>
+          <th scope="row"><b>Power Oy</b></th>
+          <td>2344152-8 </td>
+
+          <td>043 4553 622</td>
+          <td> Kasarmikatu 5, 13100 Parola </td>
+
+          <td>
+            <div class="active">Active</div>
+          </td>
+          <td><b><a href="default.asp" target="_blank">Edit</a></b></td>
+        </tr>
+
+        <tr>
+          <th scope="row"><b>Motonet Oy</b></th>
+          <td>1348543-8 </td>
+
+          <td>011 3215 399</td>
+          <td> Turuntie 23A, 61104 Turku </td>
+
+          <td>
+            <div class="active">Active</div>
+          </td>
+          <td><b><a href="default.asp" target="_blank">Edit</a></b></td>
+        </tr>
+        <tr>
+          <th scope="row"><b>Prisma Oy</b></th>
+          <td>9237542-8 </td>
+
+          <td>043 1299 111</td>
+          <td> Vanajavedenkatu 44, 02450 Oulu </td>
+
+          <td>
+            <div class="active">Active</div>
+          </td>
+          <td><b><a href="default.asp" target="_blank">Edit</a></b></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <div class="container taustat">
+    <div class="tausta">
+      <br>
+      <h2>Gigantti</h2>
+      <p>
+        Y-tunnus 1523846-8 <br> <br>
+        020 321 321 <br> <br>
+        Töölönlahdenkatu 2, 00100 Helsinki <br>
+      </p>
+    </div>
+
+    <div class="tausta">
+      <br>
+      <h2>Appointments</h2>
+      <table class="table-appt table">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Tones</th>
+            <th scope="col">Status</th>
+            <th scope="col">Edit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>15.09.2022</td>
+            <td>11</td>
+            <td> Done</td>
+            <td><b><a href="default.asp" target="_blank">Edit</a></b></td>
+          </tr>
+
+          <tr>
+            <td>22.09.2022</td>
+            <td>19</td>
+            <td> Done</td>
+            <td><b><a href="default.asp" target="_blank">Edit</a></b></td>
+          </tr>
+
+          <tr>
+            <td>10.10.2022</td>
+            <td>25</td>
+            <td> Active</td>
+            <td><b><a href="default.asp" target="_blank">Edit</a></b></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
 
 
-               
+  <footer class="footer">
+    <div class="container footer-boxes">
+      <div class="left-box">
+        <p>Cool-Finland Oy</p>
+        <p>Y-tunnus: 1944299-2</p>
+      </div>
 
-            </div>
-        
-</div>
-    
-            </section>
-    
-    
+      <div class="center-box">
+        <p>Kiimassuontie 127,</p>
+        <p>30420 FORSSA</p>
+      </div>
+
+      <div class="right-box">
+        <p>0440 242 700</p>
+        <p>info@lhjgroup.fi</p>
+        <div class="social-icons">
+          <a href="https://www.youtube.com/channel/UCs3XX3nJeROfFNkFKdeUfmg" class="fa fa-youtube"></a>
+          <a href="https://www.facebook.com/lhj.fi/" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/lhj.fi" class="fa fa-instagram"></a>
         </div>
-    
-        <footer>
-         
-            <p> Cool-Finland Oy <br>
-              Y-tunnus: 1944299-2
-              </p>
-  
-            <p> Kiimassuontie 127, <br>
-              30420 FORSSA</p>
+      </div>
+    </div>
+  </footer>
 
-              <p>0440 242 700 <br>
-                info@lhjgroup.fi
-              </p>
-            
-        </footer>
-   
 
 </body>
+
 </html>

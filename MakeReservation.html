@@ -1,136 +1,147 @@
 <!doctype html>
 <html lang="en">
-  <head>
-  	<title>Make your reservation here</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+<head>
+  <title>Make your reservation here</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-	<link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	</head>
-	<body>
+  <link rel="stylesheet" href="css/style.css">
 
-    <header>
-      <img src="../cool-finland-office/logo2.png" alt="logo" class="center">
-       </header>
+</head>
 
-	<div class="col">
-	<h1>Make your reservation here!</h1>
-	<h5>You can book an appointment here with our appointment service. Simply select the appropriate time for you and inform any additional services if needed.</h5>
-	<br>
-	<div class="mb-3">
+<body>
+
+  <header>
+    <div class="container header">
+      <div class="logo">
+        <img src="/logo2.png" alt="logo" class="center">
+      </div>
+      <div class="menu">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" tabindex="2" href="/MakeReservation.html" aria-disabled="true">Reservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/clients.html">Clients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="container reserv-form">
+    <div class="col">
+      <h1>Make your reservation here!</h1>
+      <h5>You can book an appointment here with our appointment service. Simply select the appropriate time for you and
+        inform any additional services if needed.</h5>
+      <br>
+      <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Company name:</label><br>
         <textarea rows="1,5" cols="22" placeholder=""></textarea>
-        </div>
+      </div>
 
-        <section class="ftco-section" style="float: left">
-          <div class="container">
+      <section class="ftco-section" style="float: left">
+        <div class="container">
           <div class="row justify-content-center">
-          <div class="col-md-18 text-center mb-20">
-                  
-          </div>
+            <div class="col-md-18 text-center mb-20">
+
+            </div>
           </div>
           <div class="row">
-          <div class="col-md-12">
-          <div class="calendar calendar-first" id="calendar_first">
-          <div class="calendar_header">
-          <button class="switch-month switch-left"> <i class="fa fa-chevron-left"></i></button>
-          <h2></h2>
-          <button class="switch-month switch-right"> <i class="fa fa-chevron-right"></i></button>
+            <div class="col-md-12">
+              <div class="calendar calendar-first" id="calendar_first">
+                <div class="calendar_header">
+                  <button class="switch-month switch-left"> <i class="fa fa-chevron-left"></i></button>
+                  <h2></h2>
+                  <button class="switch-month switch-right"> <i class="fa fa-chevron-right"></i></button>
+                </div>
+                <div class="calendar_weekdays"></div>
+                <div class="calendar_content"></div>
+              </div>
+            </div>
           </div>
-          <div class="calendar_weekdays"></div>
-          <div class="calendar_content" ></div>
-          </div>
-          </div>
-          </div>
-          </div>
-          </section>
-        
-        <div style="clear:left"></div>
+        </div>
+      </section>
 
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-          <label class="form-check-label" for="flexRadioDefault1">
-            Containers
-          </label>
-          </div>
-          <div class="form-check">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-          <label class="form-check-label" for="flexRadioDefault2">
-            Tons
-          </label>
-          </div>
-          </p>
-        
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Weight / Containers:</label><br>
-            <textarea rows="1,5" cols="22" placeholder=""></textarea>
-            </div>
-        <br>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Please give estimated time of the shipment:</label><br>
-              <textarea rows="1,5" cols="22" placeholder=""></textarea>
-              </div>
-        <br>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Additional info:</label><br>
-          <textarea rows="8" cols="80" placeholder=""></textarea>
-          </div>
-        
-        <button type="button" class="btn btn-primary">Cancel</button>
-        
-        <button type="button" class="btn btn-primary">Send</button>
-        
-          <script src="js/jquery.min.js"></script>
-          <script src="js/popper.js"></script>
-          <script src="js/bootstrap.min.js"></script>
-          <script src="js/main.js"></script>
-        
-          </body>
-        <br>
-        <br>
-          <footer>
-            <div class="main-content">
-              <div class="left box">
-                <p>Cool-Finland Oy</p>
-                <hp>Y-tunnus: 1944299-2</p>
-                <div class="content">
-                <p><a href="https://www.facebook.com/lhj.fi/">
-                <img src="https://www.lhj.fi/client/lhj/images/footer_fb.jpg" alt="Facebook logo">
-                </a></p>
-                </div>
-              </div>
-            
-            <div class="center box">
-              <p>Kiimassuontie 127,</p>
-              <div class="content">
-                <div class="place">
-                <span class="text">30420 FORSSA </span>
-                </div>
-                <div class="content">
-                <p><a href="https://www.instagram.com/lhj.fi">
-                <img src="https://www.lhj.fi/client/lhj/userfiles/insta-01.png" alt="Instagram logo" style="width: 50px;height: 50px;">
-                </a></p>
-            </div>
-              </div>
-              </div>
-          
-          
-              <div class="right box">
-              <p>0440 242 700</p>
-              <p>info@lhjgroup.fi</p>
-              <div class="content">
-                <p><a href="https://www.youtube.com/channel/UCs3XX3nJeROfFNkFKdeUfmg">
-                <img src="https://www.lhj.fi/client/lhj/images/footer_youtube.jpg" alt="Youtube logo">
-              </a></p>
-              </div>
-              </div>
-            </div>
-        
-          </footer>
-              </body>
-            </html>
+      <div style="clear:left"></div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Containers
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          Tons
+        </label>
+      </div>
+      </p>
+
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Weight / Containers:</label><br>
+        <textarea rows="1,5" cols="22" placeholder=""></textarea>
+      </div>
+      <br>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Please give estimated time of the
+          shipment:</label><br>
+        <textarea rows="1,5" cols="22" placeholder=""></textarea>
+      </div>
+      <br>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Additional info:</label><br>
+        <textarea rows="8" cols="80" placeholder=""></textarea>
+      </div>
+
+      <button type="button" class="btn btn-primary">Cancel</button>
+
+      <button type="button" class="btn btn-primary">Send</button>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-boxes">
+      <div class="left-box">
+        <p>Cool-Finland Oy</p>
+        <p>Y-tunnus: 1944299-2</p>
+      </div>
+
+      <div class="center-box">
+        <p>Kiimassuontie 127,</p>
+        <p>30420 FORSSA</p>
+      </div>
+
+      <div class="right-box">
+        <p>0440 242 700</p>
+        <p>info@lhjgroup.fi</p>
+        <div class="social-icons">
+          <a href="https://www.youtube.com/channel/UCs3XX3nJeROfFNkFKdeUfmg" class="fa fa-youtube"></a>
+          <a href="https://www.facebook.com/lhj.fi/" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/lhj.fi" class="fa fa-instagram"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
